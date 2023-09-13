@@ -1,0 +1,173 @@
+:root{
+    /* color type A */
+    --line_color : #555555 ;
+    --back_color : #FFECF6  ;
+}
+
+.content 
+{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.group 
+{
+    margin-block: 10px;
+}
+
+.text 
+{
+    color: orange !important;
+}
+
+
+.button{
+    position : relative ;
+    z-index : 0 ;
+    width : 240px ;
+    padding: 13px;
+    text-decoration : none ;
+    font-size : 14px ; 
+    font-weight : bold ;
+    color : var(--line_color) ;
+    letter-spacing : 2px ;
+    transition : all .3s ease ;
+}
+.button__text{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 100% ;
+    height : 100% ;
+}
+.button::before,
+.button::after,
+.button__text::before,
+.button__text::after{
+    content : '' ;
+    position : absolute ;
+    height : 3px ;
+    border-radius : 2px ;
+    background : var(--line_color) ;
+    transition : all .5s ease ;
+}
+.button::before{
+    top : 0 ;
+    left : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button::after{
+    top : 0 ;
+    right : 54px ;
+    width : 8px ;
+}
+.button__text::before{
+    bottom : 0 ;
+    right : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__text::after{
+    bottom : 0 ;
+    left : 54px ;
+    width : 8px ;
+}
+.button__line{
+    position : absolute ;
+    top : 0 ;
+    width : 56px ;
+    height : 100% ;
+    overflow : hidden ;
+}
+.button__line::before{
+    content : '' ;
+    position : absolute ;
+    top : 0 ;
+    width : 150% ;
+    height : 100% ;
+    box-sizing : border-box ;
+    border-radius : 300px ;
+    border : solid 3px var(--line_color) ;
+}
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before{
+    left : 0 ;
+}
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before{
+    right : 0 ;
+}
+.button:hover{
+    letter-spacing : 6px ;
+}
+
+.button:hover::before,
+.button:hover .button__text::before{
+    width : 8px ;
+}
+.button:hover::after,
+.button:hover .button__text::after{
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+
+
+.button:hover 
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* 本体には関係ないスタイル */
+.container{
+    width : 100% ;
+    height : 300px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
+
+
+a:hover 
+{
+    text-decoration: underline !important;
+
+}
+
+.special
+{
+    width: 100%;
+    border-radius: 30px;
+    border: solid 2px gray;
+    padding: 8px;
+    margin-block: 3px;
+}
+
+.special:focus 
+{
+    outline: none;
+    border : solid 3px var(--line_color) ;
+}
+
+
+@media screen and (min-width:0px) and (max-width:992px){
+    .display 
+    {
+        display: none;
+    }
+    .box 
+    {
+        margin: auto;
+        padding-block: 50px;
+    }
+    .button 
+    {
+        width: 170px;
+    }
+}
+

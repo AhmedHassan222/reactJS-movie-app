@@ -1,0 +1,19 @@
+body {
+  background-color: black !important;
+  margin: 0;
+
+  
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #252525;
+
+  height: 150px;
+}
+::selection {
+  background: rgb(19, 117, 117);
+}

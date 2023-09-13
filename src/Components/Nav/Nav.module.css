@@ -1,0 +1,72 @@
+.textStyle {
+    color: white;
+    font-size: 30px;
+}
+
+.textStyleSpeical {
+    color: black;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: orange;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    .menu {
+        display: flex;
+        font-size: 25px;
+    }
+
+    .textStyle {
+        font-size: 20px;
+    }
+
+    nav {
+        padding: 5px !important;
+    }
+}
+
+.special {
+    background-color: orange !important;
+    border-radius: 60px;
+    padding: 10px;
+
+
+}
+
+.special:hover {
+    background-color: rgb(207, 135, 0) !important;
+    text-decoration: none !important;
+
+}
+
+.decorationNone {
+    margin-top: 15px;
+}
+
+.link:hover {
+    text-decoration: none !important;
+    color: orange !important;
+    cursor: pointer;
+}
+
+.link {
+    text-transform: capitalize;
+}
+
+
+button:focus {
+    border: none;
+    outline: none;
+}
+

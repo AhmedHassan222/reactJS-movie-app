@@ -1,0 +1,40 @@
+.moreBtnStyle {
+    background-color: rgb(27, 170, 170);
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.moreBtnStyle:hover {
+    background-color: rgb(21, 124, 124);
+    text-decoration: none !important;
+
+}
+
+
+@media screen and (min-width:0px) and (max-width:576px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .moreBtnStyle {
+
+        font-size:16px;
+
+    }
+}
+
+.imgHover 
+{
+    transition: all 1s;
+}
+.imgHover:hover 
+{
+    transform: scale(1.1);
+}
+
+.box 
+{
+    overflow: hidden;
+}

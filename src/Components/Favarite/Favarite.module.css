@@ -1,0 +1,41 @@
+.btnStyle {
+    background-color: transparent;
+    color: red;
+
+    border: solid 1px gray;
+    border-radius: 8px;
+
+}
+
+
+.btnStyle:hover {
+    box-shadow: 0px 0px 10px red;
+
+}
+
+
+.xStyle {
+    transition: all 0.5s;
+}
+
+.xStyle:hover {
+    color: red !important;
+}
+
+.favarite {
+    min-height: 100vh !important;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:576px) {
+    .title {
+        font-size: 16px;
+    }
+    .btnStyle 
+    {
+        font-size: 14px !important;
+        padding: 0px 15px !important;
+    }
+
+}

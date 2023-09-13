@@ -1,0 +1,50 @@
+input::placeholder 
+{
+    color: rgb(201, 201, 201);
+}
+
+
+
+
+input:focus 
+{
+    outline: none !important;
+}
+
+i:hover 
+{
+    cursor: pointer;
+}
+
+.dropStyle 
+{
+    background-color: orange !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+
+}
+
+.item  
+{
+    font-weight: bold !important;
+}
+.item:hover
+{
+    background-color: orange !important;
+    color: white !important;
+}
+
+.searchBar
+{
+    border: white solid 1px;
+    color: white !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;    
+    background-color: transparent !important;
+}
+
+
+.searchBar::placeholder 
+{
+    color: white !important;
+}
